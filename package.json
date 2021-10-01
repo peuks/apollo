@@ -1,0 +1,31 @@
+{
+  "name": "apollo",
+  "version": "1.0.0",
+  "description": "Apollo Immo intégration",
+  "main": "app.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peuks/apollo.git"
+  },
+  "keywords": [
+    "Apollo",
+    "V2",
+    "Integration"
+  ],
+  "author": "David Vanmak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peuks/apollo/issues"
+  },
+  "homepage": "https://github.com/peuks/apollo#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
+}
