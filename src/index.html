@@ -37,150 +37,104 @@
     <!-- <link rel="stylesheet" href="./styles/main.css" /> -->
   </head>
 
-  <body>
+  <!-- <body data-scroll-container> -->
+  <body data-scroll-container>
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
+        <a href="#">upgrade your browser </a> to improve your experience.
       </p>
     <![endif]-->
-    <!-- NAVBAR -->
-    <header>
-      <div class="wrapper">
-        <button class="hamburger hamburger--collapse" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-        <div class="logo">
-          <img src="./assets/svg/logo.svg" alt="" />
+    <div class="navbar">
+      <div class="container wrapp">
+        <div class="burger">
+          <img src="./assets/img/burger.png" alt="" />
         </div>
-
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+        <img src="./assets/svg/logo.svg" alt="" class="logo" />
+        <nav>
+          <ul class="items">
+            <li class="item">
+              <a href="https://apollo-immo.fr/"> Locataire</a>
             </li>
-            <li class="nav__item">
-              <a href="#services" class="nav__link">My Services</a>
+            <li class="item">
+              <a href="https://apollo-immo.fr/"> Propriétaire</a>
             </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About me</a>
+            <li class="item">
+              <a href="https://apollo-immo.fr/"> Connexion</a>
             </li>
-            <li class="nav__item">
-              <a href="#work" class="nav__link">My Work</a>
+            <li class="item">
+              <a href="https://apollo-immo.fr/"> Inscription</a>
             </li>
           </ul>
         </nav>
       </div>
-    </header>
-    <!-- NAVBAR -->
-    <div class="container">
-      <main>
-        <section class="hero">
-          <div class="wrapper">
-            <div class="hero__body">
-              <h1 class="hero__title">Votre location à portée de clics</h1>
-              <h4 class="hero__subtitle">
-                Avec Apollo Immo ne cherchez plus la lune, on la décroche pour
-                vous.
-              </h4>
-              <footer class="hero__footer">
-                <div class="hero__actions">
-                  <input
-                    type="text"
-                    placeholder="Où voulez-vous vivre ?"
-                    class="button"
-                  />
-                  <button class="button">
-                    Button
-                  </button>
-                </div>
-              </footer>
-            </div>
-          </div>
-        </section>
-
-        <section class="service">
-          <div class="wrapper">
-            <div class="service__title">
-              <h2>
-                Un petit clic pour l’Homme, un grand pas pour la location
-              </h2>
-              <h3>
-                La simplification comme révolution
-              </h3>
-            </div>
-            <div class="services">
-              <div class="card">
-                <div class="card__header">
-                  <figure class="card__figure">
-                    <img
-                      src="./assets/svg/rapidite.svg"
-                      alt=""
-                      class="card__image"
-                    />
-                  </figure>
-                  <h2 class="card__title">Rapidité</h2>
-                </div>
-
-                <div class="card__body">
-                  <p class="card__copy">
-                    Nous optimisons votre recherche afin de trouver votre bien
-                    idéal en un clin d’oeil. Vous candidatez, louer et signer
-                    vos contrats à distance 24h/7. Grâce à nos services vous
-                    louez trois fois plus rapidement qu’avec une agence.
-                  </p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card__header">
-                  <figure class="card__figure">
-                    <img
-                      src="./assets/svg/rapidite.svg"
-                      alt=""
-                      class="card__image"
-                    />
-                  </figure>
-                  <h2 class="card__title">Rapidité</h2>
-                </div>
-
-                <div class="card__body">
-                  <p class="card__copy">
-                    Nous optimisons votre recherche afin de trouver votre bien
-                    idéal en un clin d’oeil. Vous candidatez, louer et signer
-                    vos contrats à distance 24h/7. Grâce à nos services vous
-                    louez trois fois plus rapidement qu’avec une agence.
-                  </p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card__header">
-                  <figure class="card__figure">
-                    <img
-                      src="./assets/svg/rapidite.svg"
-                      alt=""
-                      class="card__image"
-                    />
-                  </figure>
-                  <h2 class="card__title">Rapidité</h2>
-                </div>
-
-                <div class="card__body">
-                  <p class="card__copy">
-                    Nous optimisons votre recherche afin de trouver votre bien
-                    idéal en un clin d’oeil. Vous candidatez, louer et signer
-                    vos contrats à distance 24h/7. Grâce à nos services vous
-                    louez trois fois plus rapidement qu’avec une agence.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
     </div>
-    <!-- NAVBAR -->
+    <section class="hero">
+      <div class="container wrapp">
+        <div class="hero__content container center spacing">
+          <h1 class="hero__title">
+            Votre location à portée de clics
+          </h1>
+          <p class="hero__copy">
+            Avec Apollo Immo ne cherchez plus la lune, on la décroche pour vous.
+          </p>
+          <form class="search" action="">
+            <input type="search" placeholder="Ou voulez-vous vivre ? " />
+            <button type="submit">
+              Rechercher
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container wrapp spacing wrapp">
+        <h2 class="section__title">
+          Un petit clic pour l’Homme, un grand pas pour la location
+        </h2>
+        <h2 class="section__title">
+          La simplification comme révolution
+        </h2>
+        <ul class="split">
+          <li class="">
+            <div class="card center spacing wrapp">
+              <img class="img" src="./assets/svg/rapidite.svg" />
+              <h4 class="title">Rapidité</h4>
+              <p class="copy">
+                Nous optimisons votre recherche afin de trouver votre bien idéal
+                en un clin d’oeil. Vous candidatez, louer et signer vos contrats
+                à distance 24h/7. Grâce à nos services vous louez
+                <em>trois fois plus rapidement</em> qu’avec une agence.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="card center spacing wrapp">
+              <img class="img" src="./assets/svg/rapidite.svg" />
+              <h4 class="title">Rapidité</h4>
+              <p class="copy">
+                Nous optimisons votre recherche afin de trouver votre bien idéal
+                en un clin d’oeil. Vous candidatez, louer et signer vos contrats
+                à distance 24h/7. Grâce à nos services vous louez
+                <em>trois fois plus rapidement</em> qu’avec une agence.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="card center spacing wrapp">
+              <img class="img" src="./assets/svg/rapidite.svg" />
+              <h4 class="title">Rapidité</h4>
+              <p class="copy">
+                Nous optimisons votre recherche afin de trouver votre bien idéal
+                en un clin d’oeil. Vous candidatez, louer et signer vos contrats
+                à distance 24h/7. Grâce à nos services vous louez
+                <em>trois fois plus rapidement</em> qu’avec une agence.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
     <script src="app.js" async defer></script>
   </body>
 </html>

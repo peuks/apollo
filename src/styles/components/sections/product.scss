@@ -1,0 +1,76 @@
+.products {
+  .container {
+    overflow: hidden;
+  }
+  @media (min-width: 45em) {
+    .spacing {
+      --spacer: 1em;
+    }
+  }
+}
+.product {
+  // Grid Area
+  &__image {
+    grid-area: A;
+  }
+  &__title {
+    grid-area: B;
+    @media (min-width: 45em) {
+      text-align: start;
+    }
+  }
+  &__description {
+    grid-area: C;
+    text-align: start;
+  }
+  .actions {
+    grid-area: D;
+  }
+
+  grid-template-areas:
+    "A A A A A A A A A A A A"
+    "B B B B B B B B B B B B"
+    "C C C C C C C C C C C C"
+    "D D D D D D D D D D D D";
+  background: radial-gradient(
+    var(--clr-inner, limegreen),
+    var(--clr-outer, purple)
+  );
+  padding: 1.5rem clamp(1rem, 0.1rem + 1vw, 3rem);
+  border-radius: 1em;
+  margin-bottom: 5em;
+  text-align: center;
+  &__title {
+    h3 {
+      font-size: clamp(var(--fs-h3), 5vw + 1rem, 4rem);
+      font-weight: bold;
+      text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+    }
+  }
+  &__image {
+    margin-top: -5rem;
+    @media (min-width: 45em) {
+      transform: translateY(-2rem);
+      shape-outside: url(../assets/img/shoe-1.png);
+      shape-margin: 1em;
+      width: 65%;
+      margin: 0 -5em 0 0;
+      width: clamp(332px, 1vw + 3vw, 65%);
+    }
+  }
+
+  @media (min-width: 45em) {
+    grid-template-areas:
+      "B B A A A "
+      "B B A A A "
+      "C C C C C "
+      "C C C C C "
+      "D D D D D ";
+    grid-template-rows: 4em 3em 2em;
+  }
+  &__title {
+    h3 {
+      line-height: 1;
+    }
+  }
+}

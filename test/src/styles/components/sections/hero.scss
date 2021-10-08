@@ -1,0 +1,27 @@
+// /* Header */
+
+.hero {
+  .container {
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  text-align: center;
+
+  padding: 1em 0;
+  background-color: #111; //*Incase background-image brakes
+  &__title {
+    font-size: 2.488rem; //*Incase clamp isn't support
+    font-size: clamp(3rem, 5vw + 1rem, 4.209rem);
+    line-height: 1; //* Lower line height is possible if uppercase
+    text-transform: uppercase;
+  }
+
+  @supports (background-blend-mode: multiply) {
+    background: url("../assets/img/shoe-3.png"), radial-gradient(#444, #111);
+    background-blend-mode: multiply; // *Melt the image with gradient
+    background-attachment: fixed; // *Parallax effect
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

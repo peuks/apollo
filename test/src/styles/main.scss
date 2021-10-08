@@ -1,0 +1,233 @@
+// @import "./normalize.scss";
+@import "./components/index.scss";
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+:root {
+  --clr-1: #082032;
+  --clr-2: #eee;
+  --clr-3: #2193b0;
+  --clr-4: #f7f7f9;
+  --clr-5: #41e2ba;
+  --clr-6: #c1666b;
+
+  --dark80: rgba(48, 79, 89, 0.8);
+  --dark60: rgba(48, 79, 89, 0.6);
+  --transition: all 0.3s ease 0s;
+
+  --ff: "Poppins", sans-serif;
+  --fw-reg: 400;
+  --fl--height: 1.75;
+
+  --fs-h1: 4.209rem;
+  --fs-h2: 3.157rem;
+  --fs-h3: 2.369rem;
+  --fs-h4: 1.777rem;
+  --fs-h5: 1.333rem;
+  --fs-body: 1rem;
+  --fs-small: 0.75rem;
+
+  // Spacer
+  --spacer: 2rem;
+}
+
+/* Reset class*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  @media (min-width: 45em) {
+    font-size: clamp(100%, 1rem + 2vw, 24px);
+  }
+}
+
+html,
+body {
+  width: 100%;
+  // height: 100%;
+}
+
+body {
+  background-color: var(--clr-1);
+
+  font-family: var(--ff);
+
+  font-weight: var(--fw-reg);
+  // * Goods values can also be 1.5 or 1.6
+  line-height: 1.75;
+  color: var(--clr-4);
+  overflow: overlay;
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  // margin: 3rem 0 1.38rem;
+  font-weight: var(--fw-reg);
+  line-height: 1.75;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+}
+
+h5 {
+  font-size: var(--fs-h5);
+}
+p {
+  // margin-bottom: 1rem;
+  font-size: var(--fs-body);
+}
+
+small,
+.text_small {
+  font-size: var(--fs-small);
+}
+/* TYPOGRAPHY */
+
+/* GLOBAL STYLE */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &--grid {
+    display: grid;
+    place-items: center;
+  }
+}
+
+/**
+* 1. Centers the content. Yes, it's a bit opinionated.
+* 2. See the "width vs max-width" section
+* 3. See the "Additional Padding" section
+*/
+.wrapp {
+  margin: 0 auto;
+  // max-width: 65em; //16*65=1040px
+  max-width: 60em; //16*60=960px
+  padding: 1.5rem clamp(1rem, 1rem + 1vw, 2rem);
+}
+
+.spacing {
+  row-gap: var(--spacer, 2rem);
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+
+  /**
+  * Eachitem in flex content should have a size between 240 px and 30% 
+  * of size screen
+  *
+  * min 15em(240px) and max of 30% 
+  **/
+  & > * {
+    flex-basis: 30%;
+    min-width: 15em; // 15*16px=240px
+  }
+}
+section {
+  .section-title {
+    padding: 7em 0;
+    margin-bottom: 5rem;
+    h2 {
+      // If there is no more space with flex , it won't center anymore.
+      // *[FIX]This is a fix
+      text-align: center;
+      line-height: 1;
+    }
+  }
+}
+
+.action:first-child {
+  padding: 2rem;
+}
+
+/* Header */
+
+/* Your template */
+
+// xs
+@media screen and (min-with: 475px) {
+}
+
+// sm
+@media screen and (min-with: 640px) {
+}
+
+// md
+@media screen and (min-with: 768px) {
+}
+
+// lg
+@media screen and (min-with: 1024px) {
+}
+
+// xl
+@media screen and (min-with: 1280px) {
+}
+
+// 2xl
+@media screen and (min-with: 1536px) {
+}
+
+.hero {
+  --clr-accent: #faa700;
+}
+
+.shoe-red {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
+}
+
+.shoe-white {
+  --clr-inner: #fce4b3;
+  --clr-outer: #eac886;
+  --clr-accent: #2f4858;
+}
+
+.shoe-blue {
+  --clr-inner: #6dd5ed;
+  --clr-outer: #2193b0;
+  --clr-accent: #008951;
+}

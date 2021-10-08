@@ -1,0 +1,49 @@
+.featured {
+  background: var(--clr-2);
+  color: var(--clr-1);
+  // a link
+  &__item {
+    text-align: center;
+    display: block;
+  }
+  //figure
+  &__img {
+    position: relative;
+    height: 80%;
+    transform: scale(0.8);
+    transition: transform 270ms ease-in-out;
+
+    &:hover,
+    :focus {
+      transform: scale(1.5);
+      transform: rotate(10deg);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      /**
+      * Perfect Circle can be done with padding 100%
+      */
+      padding: 100% 100% 0 0;
+      background: var(--clr-3);
+
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+  &__details {
+    p {
+      padding: 0;
+      margin: 0;
+      margin-top: 1em;
+    }
+    .price {
+      display: block;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="Best website ever." />
+    <!-- Facebbok And Twitter Meta-->
+    <meta property="og:title" content="European Travel Destinations" />
+    <meta
+      property="og:description"
+      content="Offering tour packages for individuals or groups."
+    />
+    <meta
+      property="og:image"
+      content="http://euro-travel-example.com/thumbnail.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://euro-travel-example.com/index.htm"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Facebbok And Twitter Meta END-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- <link rel="stylesheet" href="./styles/main.css" /> -->
+  </head>
+
+  <body data-scroll-container>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <!-- HEADER -->
+    <header class="hero">
+      <div class="container wrapp spacing">
+        <h1 class="hero__title">Amazing shoes at an amazing price</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+          perspiciatis facilis beatae laudantium quidem enim sit sequi!
+        </p>
+        <div class="actions">
+          <a href="#" class="btn">See what we have</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- *Each Section has it's own container -->
+      <section class="featured">
+        <div class="container wrapp">
+          <!-- Don't always follow the BEM rules , it's a non sense -->
+          <div class="section-title">
+            <h2>Featured products</h2>
+          </div>
+          <!-- Don't always follow the BEM rules , it's a non sense -->
+          <div class="split">
+            <a href="#" class="featured__item">
+              <figure class="featured__img">
+                <img
+                  src="./assets/img/shoe-5.png"
+                  alt=""
+                  class="featured__img"
+                />
+              </figure>
+              <div class="featured__details">
+                <p><span class="price">$99</span>shoe name</p>
+              </div>
+            </a>
+            <a href="#" class="featured__item">
+              <figure class="featured__img">
+                <img
+                  src="./assets/img/shoe-6.png"
+                  alt=""
+                  class="featured__img"
+                />
+              </figure>
+              <div class="featured__details">
+                <p><span class="price">$99</span>shoe name</p>
+              </div>
+            </a>
+            <a href="#" class="featured__item">
+              <figure class="featured__img">
+                <img
+                  src="./assets/img/shoe-4.png"
+                  alt=""
+                  class="featured__img"
+                />
+              </figure>
+              <div class="featured__details">
+                <p><span class="price">$99</span>shoe name</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container wrapp">
+          <div class="section-title">
+            <h2>Our products</h2>
+          </div>
+
+          <!-- * An article can be concidered as a card -->
+          <article class="product container--grid shoe-red spacing">
+            <figure class="product__image">
+              <img src="./assets/img/shoe-1.png" alt="" />
+            </figure>
+            <div class="product__title">
+              <h3>A really nice shoe</h3>
+            </div>
+            <div class="product__description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                quam perspiciatis facilis beatae laudantium quidem enim sit
+                sequi!
+              </p>
+            </div>
+            <div class="actions">
+              <a href="" class="btn">Buy now</a>
+            </div>
+          </article>
+
+          <article class="product container--grid shoe-white shoe-left spacing">
+            <figure class="product__image">
+              <img src="./assets/img/shoe-2.png" alt="" />
+            </figure>
+            <div class="product__title">
+              <h3>A really nice shoe</h3>
+            </div>
+            <div class="product__description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                quam perspiciatis facilis beatae laudantium quidem enim sit
+                sequi!
+              </p>
+            </div>
+            <div class="actions">
+              <a href="" class="btn">Buy now</a>
+            </div>
+          </article>
+
+          <article class="product container--grid shoe-blue spacing">
+            <figure class="product__image">
+              <img src="./assets/img/shoe-3.png" alt="" />
+            </figure>
+            <div class="product__title">
+              <h3>A really nice shoe</h3>
+            </div>
+            <div class="product__description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                quam perspiciatis facilis beatae laudantium quidem enim sit
+                sequi!
+              </p>
+            </div>
+            <div class="actions">
+              <a href="" class="btn">Buy now</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="app.js" async defer></script>
+  </body>
+</html>
